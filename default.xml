@@ -24,8 +24,8 @@
   <contactinfo bugurl="go/repo-bug" />
 
   <!-- AOSP Projects -->
-
-  <project path="test/test" name="wzwtt/lineage" groups="pdk" >
-    <copyfile src="core/root.mk" dest="Makefile" />
+  <project path="test/1" name="wzwtt/lineage-OTA" />
+  <project path="test/test" name="wzwtt/repotest" groups="pdk" >
+    <copyfile src="rosy.json" dest="test/1" />
   </project>
 </manifest>
