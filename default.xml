@@ -16,8 +16,7 @@
            review="android-review.googlesource.com"
            revision="refs/tags/android-12.1.0_r11" />
 
-  <default revision="refs/heads/main"
-           remote="github"
+  <default remote="github"
            sync-c="true"
            sync-j="4" />
 
