@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="github"
+           fetch="https://hub.nuaa.cf"
+           review="review.lineageos.org" />
+  
+  <remote  name="gitlab"
+           fetch="https://gitlab.com" />
+  
+  <remote  name="private"
+           fetch="ssh://git@github.com" />
+
+  <remote  name="aosp"
+           fetch="https://mirrors.tuna.tsinghua.edu.cn/git/AOSP"
+           review="android-review.googlesource.com"
+           revision="refs/tags/android-12.1.0_r11" />
+
+  <default revision="refs/heads/main"
+           remote="github"
+           sync-c="true"
+           sync-j="4" />
+
+  <contactinfo bugurl="go/repo-bug" />
+
+  <!-- AOSP Projects -->
+
+  <project path="test/test" name="wzwtt/lineage" groups="pdk" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+</manifest>
